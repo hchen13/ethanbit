@@ -15,6 +15,10 @@ def index(request):
 	return render(request, 'ethanbit/index.html')
 
 
+def login_page(request):
+	return render(request, 'ethanbit/registrar.html')
+
+
 @require_GET
 def get_asset(request, file_path):
 	params = request.GET

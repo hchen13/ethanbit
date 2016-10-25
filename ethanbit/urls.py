@@ -25,4 +25,6 @@ urlpatterns = [
 	url(r'^projects/', include('projects.urls')),
     url(r'^resume/', include('resume.urls')),
     url(r'^assets/(?P<file_path>.*)', views.get_asset),
+
+    url(r'^login/', views.login_page, name='login_page'),
 ]
