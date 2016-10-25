@@ -1,0 +1,32 @@
+
+a.none {
+	text-decoration: none;
+	display: inline-block;
+}
+.header #btn-upload {
+	display: inline-block;
+	margin-top: 20px;
+	float: right;
+	font-family: "Raleway";
+}
+.gallery {
+	/*background-color: #b123d4;*/
+	font-size: 0;
+	margin-bottom: 50px;
+}
+.gallery img {
+	width: 33.33%;
+}
+.gallery .thumb {
+	transition: opacity .5s;
+	opacity: 1;
+}
+.gallery .thumb[data-loading='true'] {
+	opacity: 0;
+}
+.gallery .thumb:hover {
+	opacity: .7;
+}
+#gallery-img-origin {
+	width: 100%;
+}

@@ -1,0 +1,62 @@
+.terminal {
+	color: #fff;
+	width: 600px;
+	height: 300px;
+	background-color: #000;
+	text-align: left;
+	padding: 14px 20px;
+	font-family: monospace;
+	overflow: scroll;
+}
+.terminal p {
+	word-wrap: break-word;
+}
+.terminal .holder {
+	position: absolute;
+	left: -100000px;
+}
+.terminal .line {
+	background-color: transparent;
+	border: none;
+	resize: none;
+	width: 100%;
+}
+.terminal .prompt-line {
+	width: 100%;
+	line-height: 20px;
+}
+.prompt-line .prompt {
+	line-height: 20px;
+}
+.prompt-line .command {
+	max-width: 100%;
+	line-height: 20px;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+.command .caret {
+	vertical-align: sub;
+	width: 8px;
+	height: 16px;
+	content: " ";
+	display: inline-block;
+	background-color: #fff;
+	border: none;
+	margin-left: 0;
+	margin-right: -8px;
+}
+@keyframes blink {
+	100% {
+		background-color: #000;
+	}
+	0% {
+		border: none;
+		background-color: #fff;
+	}
+}
+.prompt-line .caret.active {
+	animation-name: blink;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-timing-function: steps(1, 2);
+}

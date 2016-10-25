@@ -1,0 +1,40 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<title>Projects - Ethanbit</title>
+	{% include "ethanbit/headers.html" %}
+</head>
+<body class='projects-home'>
+	<div class="container">
+		<div class="header">
+			<a class="none" href='/'>
+				<h1 class="logo">Ethanbit</h1>
+			</a>
+		</div>
+		<div class="main">
+			<div class="intro">
+				<p>Interesting things I've been working on.</p>
+			</div>
+
+			<div class="project-list row">
+				<script type="text/template" id='project-item-template'>
+				<div class="project-item-container col-sm-12">
+					<div class="project-item">
+						<div class="project-info">
+							<h3>{name}</h3>
+							<p>{intro}</p>
+						</div>
+						<div class="project-img"></div>
+					</div>
+				</div>
+				</script>
+			</div>
+		</div>
+	</div>
+
+	{% include "ethanbit/common_js_includes.html" %}
+	<script type="text/javascript" src='{% static "projects/js/ui.js" %}'></script>
+	<script type="text/javascript" src='{% static "projects/js/app.js" %}'></script>
+</body>
+</html>

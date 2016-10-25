@@ -1,0 +1,50 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<title>Gallery - Ethanbit</title>
+	<link rel="stylesheet" type="text/css" href="{%static 'gallery/css/gallery.css' %}">
+	<link rel="stylesheet" type="text/css" href="{%static 'gallery/css/gallery.sm.css' %}">
+	{% include "ethanbit/headers.html" %}
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<a class="none" href='/'>
+				<h1 class="logo">Ethanbit</h1>
+			</a>
+			{% if is_logged_in %}
+			<button class='btn btn-primary btn-lg' id='btn-upload'>UPLOAD</button>
+			<form action='{% url "gallery:photo_list" %}' method='post' enctype='multipart/form-data'>
+				{% csrf_token %}
+				<input multiple name='source' type='file' class='secret' id='image-upload'>
+			</form>
+			{%endif%}
+		</div>
+		<div class="main">
+			<div class="intro">
+				<p>Life moments worth capturing.</p>
+			</div>
+			<div class="gallery">
+				<script type="text/template" id='gallery_img_template'>
+					<img class="thumb" src='{thumb_url}', data-src='{source}' />
+				</script>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" tabindex='-1' role='dialog' id='gallery-modal'>
+		<div class="modal-dialog modal-lg">
+			<img id='gallery-img-origin' class='modal-content'>
+		</div>
+	</div>
+
+	<div class="terminal-container">
+		{% include 'terminal/cli.html' %}
+	</div>
+
+	{% include "ethanbit/common_js_includes.html" %}
+	<script type="text/javascript" src='{% static "gallery/js/ui.js" %}'></script>
+	<script type="text/javascript" src='{% static "gallery/js/app.js" %}'></script>
+</body>
+</html>

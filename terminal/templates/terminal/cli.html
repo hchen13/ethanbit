@@ -1,0 +1,14 @@
+{% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'terminal/css/terminal.css' %}">
+{% csrf_token %}
+<div class="terminal hide">
+	<p class="prompt-line">
+		<span class="prompt"></span>
+		<span class="command">
+		</span>
+	</p>
+</div>
+<!-- <script type="text/javascript" src='{% static "jquery-2.2.0.min.js" %}'></script> -->
+<script type="text/javascript" src="{% static 'ethanbit/js/jquery.eb.utils.js' %}"></script>
+<script type="text/javascript" src="{% static 'terminal/js/jquery.eb.terminal.js' %}"></script>
+<script type="text/javascript" src="{% static 'terminal/js/app.js' %}"></script>

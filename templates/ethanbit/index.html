@@ -1,0 +1,57 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+	    <title>Ethanbit</title>
+	    {% include "ethanbit/headers.html" %}
+	</head>
+<body class='home'>
+	<div class="site-wrap">
+		<div class="eb-top-bar clearfix">
+			<nav>
+				<ul class="nav">
+					<!-- <li class="active">
+						<a href="">Home</a>
+					</li> -->
+					<li>
+						<a href="gallery">Gallery</a>
+					</li>
+					<li>
+						<a href="projects">Projects</a>
+					</li>
+					<li>
+						<a href="resume">Resume</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<div class="caption">
+			<div class="bg">
+				<h1 class="title">I'm Ethan.</h1>
+				<p class="intro">
+					Software developer, passionate about machine learning, play well with team, lifelong learner
+				</p>
+			</div>
+		</div>
+		<div class="footer">
+			<a href="https://cn.linkedin.com/in/hchen13">
+				<i class="fa-linkedin fa"></i>
+			</a>
+			<a href="https://www.instagram.com/chzethan/">
+				<i class="fa-instagram fa"></i>
+			</a>
+			<a href="https://github.com/hchen13">
+				<i class="fa-github fa"></i>
+			</a>
+			<a href="mailto:career_hchen13@qq.com">
+				<i class="fa-envelope-o fa"></i>
+			</a>
+		</div>
+		<div class="terminal-container">
+			{% include 'terminal/cli.html' %}
+		</div>
+	</div>
+	{% include "ethanbit/common_js_includes.html" %}
+	<script type="text/javascript" src='{% static "ethanbit/js/index.app.js" %}'></script>
+</body>
+</html>

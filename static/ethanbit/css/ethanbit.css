@@ -1,0 +1,299 @@
+@font-face {
+	font-family: "Raleway";
+	font-weight: 400;
+	font-style: normal;
+	src: url(/static/fonts/Raleway/Raleway-Regular.ttf);
+}
+@font-face {
+	font-family: "Raleway";
+	font-weight: 300;
+	font-style: normal;
+	src: url(/static/fonts/Raleway/Raleway-Light.ttf);
+}
+@font-face {
+	font-family: "Raleway";
+	font-weight: 200;
+	font-style: normal;
+	src: url(/static/fonts/Raleway/Raleway-ExtraLight.ttf);
+}
+@font-face {
+	font-family: "Raleway";
+	font-weight: 100;
+	font-style: normal;
+	src: url(/static/fonts/Raleway/Raleway-Thin.ttf);
+}
+html {
+	height: 100%;
+}
+body {
+	height: 100%;
+	font-family: "Raleway";
+}
+body.home {
+	text-align: center;
+	text-shadow: 0 1px 3px rgba(0, 0, 0, .5);
+	color: #fff;
+	background-color: rgba(51, 51, 51, 1);
+	background-image: url(../img/bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+body.home h1.title {
+	font-weight: bold;
+}
+body.registrar {
+	background-color: #333;
+	text-align: center;
+	background-image: url(../img/bg6.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.header {
+	border-bottom: 1px solid #eee;
+	padding-bottom: 5px;
+}
+.main {
+	padding-top: 10px;
+}
+.secret {
+	position: absolute;
+	left: -9999em;
+}
+.logo {
+	color: #000;
+	font-size: 30px;
+	font-weight: 300;
+	display: inline-block;
+	line-height: 36px;
+	font-family: "Raleway";
+	letter-spacing: 1px;
+}
+.logo:hover {
+	color: rgba(0, 0, 0, .6);
+}
+.site-wrap {
+	display: table;
+	width: 100%;
+	height: 100%;
+	min-height: 100%;
+	box-shadow: inset 0 0 100px rgba(0, 0, 0, .5);
+}
+.eb-top-bar {
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 30px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	/*background-color: rgba(0, 0, 0, .1);*/
+}
+.eb-top-bar .logo {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	float: left;
+}
+.eb-top-bar .nav {
+	float: right;
+}
+.eb-top-bar .nav li {
+	display: inline-block;
+	font-size: 16px;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+.eb-top-bar .nav li a {
+	color: rgba(255, 255, 255, .75);
+	border-bottom: 2px solid transparent;
+	font-weight: bold;
+}
+.eb-top-bar .nav li.active a {
+	border-bottom-color: #fff;
+	color: #fff;
+}
+.eb-top-bar .nav li a:hover {
+	background-color: transparent;
+	/*border-bottom-color: rgba(255, 255, 255, .75);*/
+	border-bottom-color: #fff;
+	color: #fff;
+}
+.caption {
+	display: table-cell;
+	vertical-align: middle;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.caption .bg {
+	margin-top: -50px;
+}
+.caption .intro {
+	font-size: 16px;
+	text-align: center;
+}
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 30px;
+	width: 100%;
+	padding-right: 30px;
+	text-align: right;
+	display: inline-block;
+}
+.footer a {
+	margin-left: 10px;
+	margin-right: 10px;
+	font-size: 24px;
+	text-decoration: none;
+	color: #fff;
+}
+.footer a:hover .fa {
+	transform: rotate(360deg);
+	transition: transform .6s ease;
+}
+.terminal-container {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+}
+.registrar-panel {
+	width: 380px;
+	min-width: 324px;
+	height: 100%;
+	background-color: rgba(255, 255, 255, 1);
+	padding: 24px 38px;
+}
+/*.registrar-panel:before {
+	content: "";
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}*/
+.registrar-switch {
+	font-size: 0;
+	margin-bottom: 40px;
+}
+.registrar-switch > a.registrar-nav {
+	text-decoration: none;
+	color: #797979;
+	width: 50%;
+	display: inline-block;
+	font-size: 14px;
+	padding: 10px 0;
+	cursor: pointer;
+}
+.eb-navigator {
+	position: relative;
+	padding-bottom: 2px;
+}
+.eb-navigator > .eb-navigator-underline {
+	width: 50%;
+	height: 2px;
+	background-color: #3C763D;
+	position: absolute;
+	bottom: 0;
+	transition: left .4s;
+}
+.view-port {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+.pages {
+	width: 400%;
+	font-size: 0;
+	position: relative;
+	top: 0;
+	transition: left .4s;
+}
+.login-controls {
+	vertical-align: middle;
+	color: #3C763D;
+	display: inline-block;
+	width: 25%;
+	font-size: 14px;
+	display: inline-block;
+	margin-right: 25%;
+}
+.eb-form-control {
+	border: none;
+	border-bottom: #eee 1px solid;
+	border-radius: 0;
+	box-shadow: none;
+	outline: none;
+	background-color: transparent;
+}
+.eb-form-control:focus,
+button[class^='eb-form']:focus {
+	box-shadow: none;
+	outline: none;
+}
+body.registrar .login-controls *:not(i) {
+	margin-top: 10px;
+}
+body.registrar .login-controls > label {
+	margin-bottom: 20px;
+}
+body.registrar .login-controls > button.eb-form-submit {
+	margin-top: 80px;
+}
+.eb-form-submit {
+	width: 100%;
+	border: none;
+	background-color: #3C763D;
+	color: #fff;
+	padding: 10px;
+}
+.eb-form-button {
+	width: 100%;
+	border: none;
+	padding: 10px;
+	color: #fff;
+}
+.eb-input-view-container {
+	width: 100%;
+	position: relative;
+}
+.eb-input-view-container i {
+	position: absolute;
+	right: 7px;
+	bottom: 9px;
+	padding: 0;
+	margin: 0;
+	color: #797979;
+}
+.btn {
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .26);
+	border: 0;
+	border-radius: 2px;
+}
+.project-item-container {
+	padding: 14px;
+}
+.project-item {
+	border-radius: 2px;
+	box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, .26);
+	/*background-color: #afafaf;*/
+	height: 300px;
+	font-size: 0;
+	position: relative;
+}
+.project-info {
+	padding: 14px 25px;
+	width: 60%;
+	background-color: rgba(255, 255, 255, 0.3);
+	font-size: 14px;
+	position: absolute;
+	left: 0;
+}
+.project-img {
+	position: absolute;
+	width: 40%;
+	height: 100%;
+	left: 60%;
+	background-color: #afafaf;
+	background-size: cover;
+	background-position: center;
+	transition: opacity .3s;
+}

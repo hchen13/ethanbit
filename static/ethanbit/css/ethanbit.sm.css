@@ -1,0 +1,19 @@
+@media (max-width: 992px) {
+	.footer {
+		width: 100%;
+		text-align: center;
+		padding-right: 0;
+	}
+	.eb-top-bar .nav {
+		float: none;
+	}
+	.eb-top-bar .nav li {
+		font-size: 14px;
+		margin-left: 3px;
+		margin-right: 3px;
+	}
+	.eb-top-bar {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
