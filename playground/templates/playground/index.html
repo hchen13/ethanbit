@@ -1,0 +1,14 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<title>Playground - Ethanbit</title>
+	{% include "ethanbit/headers.html" %}
+</head>
+<body>
+	<button class="a">John Doe</button>
+	<button class="b">25</button>
+	{% include "ethanbit/common_js_includes.html" %}
+	<script type="text/javascript" src='{% static "playground/js/app.js" %}'></script>
+</body>
+</html>

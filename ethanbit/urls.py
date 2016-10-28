@@ -18,12 +18,17 @@ from django.contrib import admin
 from . import views
 
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
     url(r'^$', views.index, name='home'),
+    url(r'^admin/', admin.site.urls),
+
+    # apps
     url(r'^gallery/', include('gallery.urls')),
     url(r'^terminal/', include('terminal.urls')),
 	url(r'^projects/', include('projects.urls')),
     url(r'^resume/', include('resume.urls')),
+    url(r'^playground/', include('playground.urls')),
+
+    # extra url routings
     url(r'^assets/(?P<file_path>.*)', views.get_asset),
 
     url(r'^login/', views.login_page, name='login_page'),

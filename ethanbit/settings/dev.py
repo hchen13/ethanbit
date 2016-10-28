@@ -22,6 +22,7 @@ DATABASES = {
 # Project specific configurations
 
 DEV_PROJECT_APPS = [
+    'playground.apps.PlaygroundConfig',
 ]
 
 PROJECT_MIDDLEWARE = [
