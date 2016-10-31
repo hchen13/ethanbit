@@ -89,3 +89,4 @@ ENV/
 .ropeproject
 LICENSE
 .idea/
+ethanbit/wsgi.py
