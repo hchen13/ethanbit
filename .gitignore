@@ -92,3 +92,4 @@ LICENSE
 ethanbit/wsgi.py
 manage.py
 
+static_deploy/
