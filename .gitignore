@@ -89,7 +89,5 @@ ENV/
 .ropeproject
 LICENSE
 .idea/
-ethanbit/wsgi.py
-manage.py
 
 static_deploy/
