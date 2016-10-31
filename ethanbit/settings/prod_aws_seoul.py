@@ -40,5 +40,5 @@ STATICFILES_DIRS = [
 
 # Media files (user-generated files)
 
-MEDIA_ROOT = '/Users/divestar/Pictures/ethanbit_assets/'
+MEDIA_ROOT = '/home/ec2-user/uploads/'
 
