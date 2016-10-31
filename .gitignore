@@ -90,4 +90,3 @@ ENV/
 LICENSE
 .idea/
 ethanbit/wsgi.py
-manage.py
