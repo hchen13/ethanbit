@@ -39,3 +39,8 @@ def get_asset(request, file_path):
 	response = HttpResponse(content_type='image/jpeg')
 	img.save(response, 'jpeg')
 	return response
+
+
+def ssl_challenge(request):
+	content = 'NKiD5Pt_k0Cg3NlV1Xngdviq1OwAl8Ul7UdvvsCnP8Q.KPiXVW9Q5SR145VmWv-qa5fS4KHhliGiyJ-p8d_Gqcw'
+	return HttpResponse(content)

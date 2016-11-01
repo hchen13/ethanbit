@@ -32,4 +32,7 @@ urlpatterns = [
     url(r'^assets/(?P<file_path>.*)', views.get_asset),
 
     url(r'^login/', views.login_page, name='login_page'),
+
+    # ssl challenge
+    url(r'^\.well-known/acme-challenge/NKiD5Pt_k0Cg3NlV1Xngdviq1OwAl8Ul7UdvvsCnP8Q', views.ssl_challenge),
 ]
