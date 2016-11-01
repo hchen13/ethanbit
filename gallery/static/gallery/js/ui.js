@@ -44,13 +44,10 @@
 		this.isLoading = false
 
 		var $el = this.$element
-		var source = new Image()
 		var canvas = document.createElement("canvas")
 
-		source.src = $el[0].src
-		
-		var width = source.width
-		var height = source.height
+		var width = $el[0].naturalWidth
+		var height = $el[0].naturalHeight
 		var length = width < height ? width : height
 		var left = width / 2 - length / 2
 		var top = height / 2 - length / 2
@@ -58,8 +55,10 @@
 		canvas.width = length
 		canvas.height = length
 
-		canvas.getContext('2d').drawImage(source, left, top, length, length, 0, 0, length, length)
-		$el.attr('src', canvas.toDataURL('image/png'))
+		canvas.getContext('2d').drawImage($el[0], left, top, length, length, 0, 0, length, length)
+		var data_url = canvas.toDataURL('image/png')
+
+		$el.attr('src', data_url)
 	}
 
 	Thumbnail.prototype.showOriginal = function (e) {
