@@ -107,13 +107,13 @@ body.registrar {
 	color: rgba(255, 255, 255, .75);
 	border-bottom: 2px solid transparent;
 	font-weight: bold;
+	background-color: transparent;
 }
 .eb-top-bar .nav li.active a {
 	border-bottom-color: #fff;
 	color: #fff;
 }
 .eb-top-bar .nav li a:hover {
-	background-color: transparent;
 	/*border-bottom-color: rgba(255, 255, 255, .75);*/
 	border-bottom-color: #fff;
 	color: #fff;
