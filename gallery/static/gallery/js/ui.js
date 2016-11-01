@@ -52,8 +52,6 @@
 		var left = width / 2 - length / 2
 		var top = height / 2 - length / 2
 
-		console.log(width, height)
-
 		canvas.width = length
 		canvas.height = length
 
