@@ -21,7 +21,6 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__fil
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'owe^u5h2dcp^i^#crl_x5!o9t*9$vycs#ga@)g8^y&$@adk4td'
 
-# SECURITY WARNING: don't run with debug turned on in production!
 
 CORS_ORIGIN_ALLOW_ALL = True
 
@@ -36,6 +35,7 @@ PREREQ_APPS = [
 	'django.contrib.sessions',
 	'django.contrib.messages',
 	'django.contrib.staticfiles',
+	'corsheaders',
 	'rest_framework',
 ]
 
@@ -49,6 +49,7 @@ PROJECT_APPS = [
 PREREQ_MIDDLEWARE = [
 	'django.middleware.security.SecurityMiddleware',
 	'django.contrib.sessions.middleware.SessionMiddleware',
+	'corsheaders.middleware.CorsMiddleware',
 	'django.middleware.common.CommonMiddleware',
 	'django.middleware.csrf.CsrfViewMiddleware',
 	'django.contrib.auth.middleware.AuthenticationMiddleware',
