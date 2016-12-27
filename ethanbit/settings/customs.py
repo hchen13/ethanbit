@@ -8,4 +8,4 @@ IMAGE_SIZES = {
 
 
 # Resume app configs
-RESUME_FILE = 'hanzhang_chen_fall2016.pdf'
+RESUME_FILE = 'winter2016_en_sm.pdf'
