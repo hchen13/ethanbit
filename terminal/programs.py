@@ -36,7 +36,7 @@ def entry(request):
 			if files is not None:
 				args.append(files)
 			response = func(request, *args)
-		except Exception, e:
+		except Exception as e:
 			error = {
 				'error_type': ILLEGAL_ARGS,
 				'error_message': str(e)
