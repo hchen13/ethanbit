@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "ethanbit.settings.prod_aws_seoul")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "ethanbit.settings.prod_aliyun")
 
 application = get_wsgi_application()
