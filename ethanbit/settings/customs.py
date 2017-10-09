@@ -1,3 +1,4 @@
+import os
 # Gallery app configs
 IMAGE_SIZES = {
 	'tiny': (100, 100),
