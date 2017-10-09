@@ -18,7 +18,7 @@ DATABASES = {
     }
 }
 
-
+ALLOWED_HOSTS = ['*']
 # Project specific configurations
 
 DEV_PROJECT_APPS = [
