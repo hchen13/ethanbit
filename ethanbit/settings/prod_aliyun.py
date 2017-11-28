@@ -11,9 +11,9 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'ethanbit',
         'USER': 'ethan',
-	    'PASSWORD': 'qwerasdf',
-	    'HOST': 'localhost',
-	    'PORT': 3306,
+        'PASSWORD': 'qwerasdf',
+        'HOST': 'localhost',
+        'PORT': 3306,
     }
 }
 
@@ -37,11 +37,10 @@ ALLOWED_HOSTS = ['*']
 # Static files
 
 STATICFILES_DIRS = [
-	os.path.join(BASE_DIR, 'static'),
+    os.path.join(BASE_DIR, 'static'),
 ]
 
 
 # Media files (user-generated files)
 
 MEDIA_ROOT = '/root/projects/ethanbit/uploads/'
-

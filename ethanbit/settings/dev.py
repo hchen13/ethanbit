@@ -12,9 +12,9 @@ DATABASES = {
         # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
         'NAME': 'ethanbit',
         'USER': 'root',
-	    'PASSWORD': 'root',
-	    'HOST': 'localhost',
-	    'PORT': 3306,
+        'PASSWORD': 'root',
+        'HOST': 'localhost',
+        'PORT': 3306,
     }
 }
 
@@ -35,11 +35,10 @@ MIDDLEWARE = PREREQ_MIDDLEWARE + PROJECT_MIDDLEWARE
 # Static files
 
 STATICFILES_DIRS = [
-	os.path.join(BASE_DIR, 'static'),
+    os.path.join(BASE_DIR, 'static'),
 ]
 
 
 # Media files (user-generated files)
 
 MEDIA_ROOT = '/Users/divestar/Pictures/ethanbit_assets/'
-

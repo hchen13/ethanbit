@@ -11,4 +11,3 @@ settings = importlib.import_module(os.environ.get('DJANGO_SETTINGS_MODULE'))
 
 def index(request):
 	return render(request, 'playground/index.html')
-
